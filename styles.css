@@ -22,6 +22,22 @@ body {
     gap: 10px;
 }
 
+/* Estilo para o campo de entrada de texto expansível */
+#controls textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
+    width: 100%;
+    resize: none; /* Remove o redimensionamento manual */
+    overflow: hidden;
+    min-height: 40px; /* Altura inicial mínima */
+    max-height: 200px; /* Altura máxima para evitar overflow */
+}
+
+
 /* Estilo dos botões */
 #controls button, .close-btn {
     padding: 10px 20px;

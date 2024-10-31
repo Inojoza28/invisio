@@ -9,15 +9,14 @@
 <body>
     <div id="controls">
         <label for="inputMessage">Digite sua mensagem:</label>
-        <input type="text" id="inputMessage" placeholder="Digite uma mensagem para codificação">
+        <textarea id="inputMessage" placeholder="Digite uma mensagem para codificação"></textarea>
         <button id="generateAvatar">Gerar Avatar Codificado</button>
         <button id="downloadImage">Baixar Avatar Codificado</button>
         <button id="decodeImageButton">Decodificar Mensagem de Imagem</button>
         <input type="file" id="uploadImage" style="display: none;">
-
-        <!-- Botão para abrir o modal -->
         <button id="openModalButton" style="display: none;">Ver Mensagem Decodificada</button>
     </div>
+    
 
     <!-- Modal para exibir a mensagem decodificada -->
     <div id="messageModal" class="modal">

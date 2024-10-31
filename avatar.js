@@ -158,3 +158,9 @@ document.getElementById('decodeImageButton').addEventListener('click', () => {
 document.getElementById('uploadImage').addEventListener('change', decodeAvatarFromImage);
 
 window.addEventListener("load", init3D);
+
+// Ajusta a altura do textarea conforme o usuário digita
+document.getElementById('inputMessage').addEventListener('input', function () {
+    this.style.height = 'auto'; // Reseta a altura para calcular o novo tamanho
+    this.style.height = this.scrollHeight + 'px'; // Define a altura conforme o conteúdo
+});
