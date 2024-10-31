@@ -126,3 +126,52 @@ body {
     color: #333;
 }
 
+/* Estilos responsivos para telas menores */
+@media screen and (max-width: 768px) {
+    /* Ajusta o painel de controle */
+    #controls {
+        width: 60%;
+        margin: 10px auto;
+        padding: 8px;
+        gap: 10px;
+    }
+
+    /* Redimensiona o botão de visualizar */
+    #openModalButton {
+        padding: 8px;
+        font-size: 0.9em;
+        width: 100%;
+        border-radius: 40px;
+    }
+
+    /* Reduz o tamanho dos botões */
+    #controls button, .close-btn {
+        padding: 8px;
+        font-size: 0.9em;
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    /* Ajusta a caixa de entrada de texto */
+    #controls textarea {
+        padding: 8px;
+        font-size: 0.9em;
+        min-height: 50px;
+        max-height: 150px;
+        width: 94%;
+    }
+
+    /* Ajusta o tamanho do modal e centraliza */
+    .modal-content {
+        width: 90%;
+        max-width: 300px;
+        padding: 15px;
+    }
+
+    /* Redimensiona o canvas */
+    #avatarCanvas {
+        width: 100%;
+        height: auto; /* Mantém a proporção do canvas */
+        max-height: 1000px;
+    }
+}
