@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mensagem Codificada em Avatar</title>
+</head>
+<body>
+    <div id="controls">
+        <label for="inputMessage">Digite sua mensagem:</label>
+        <input type="text" id="inputMessage" placeholder="Digite uma mensagem para codificação">
+        <button id="generateAvatar">Gerar Avatar Codificado</button>
+        <button id="downloadImage">Baixar Avatar Codificado</button>
+        <button id="decodeImageButton">Decodificar Mensagem de Imagem</button>
+        <input type="file" id="uploadImage" style="display: none;">
+
+        <!-- Botão para abrir o modal -->
+        <button id="openModalButton" style="display: none;">Ver Mensagem Decodificada</button>
+    </div>
+
+    <!-- Modal para exibir a mensagem decodificada -->
+    <div id="messageModal" class="modal">
+        <div class="modal-content">
+            <p id="decodedMessageText">Mensagem Decodificada: N/A</p>
+            <button class="close-btn" onclick="closeModal()">Fechar</button>
+        </div>
+    </div>
+
+    <canvas id="avatarCanvas"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+    <script src="avatar.js"></script>
+</body>
+</html>
