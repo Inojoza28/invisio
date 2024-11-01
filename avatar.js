@@ -103,7 +103,7 @@ function decodeMessageFromImage(ctx) {
 
 // Função para abrir o modal com a mensagem decodificada
 function openModal(decodedMessage) {
-    document.getElementById("decodedMessageText").textContent = `Mensagem Decodificada: "${decodedMessage}"`;
+    document.getElementById("decodedMessageText").textContent = `Mensagem Decodificada: " \n ${decodedMessage}"`;
     document.getElementById("messageModal").style.display = "flex";
 }
 
