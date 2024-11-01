@@ -64,6 +64,7 @@ body {
 /* Botão de Visualizar com estilo especial */
 #openModalButton {
     background-color: #ff8c42;
+    background: linear-gradient(45deg, #ff902b, transparent);
     color: #ffffff;
     font-weight: bold;
     border-radius: 50px;
