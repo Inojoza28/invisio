@@ -20,4 +20,17 @@ Invisio é uma aplicação web interativa que permite a codificação e decodifi
 1. **Codificação**: A mensagem digitada pelo usuário é transformada em binário. Usando a técnica de esteganografia, cada bit da mensagem é embutido nos bits menos significativos dos pixels da imagem, tornando-se invisível.
 2. **Decodificação**: O usuário faz o upload da imagem gerada para o Invisio, que então lê os pixels e extrai a mensagem embutida.
 
+## Exemplo de Uso
 
+1. Digite uma mensagem secreta no campo de texto e clique em "Gerar Avatar Codificado".
+2. Baixe a imagem resultante e envie para outra pessoa.
+3. Para decodificar, a pessoa deve fazer o upload da imagem no Invisio e clicar em "Ver Mensagem Decodificada" para ler a mensagem oculta.
+
+---
+
+### Observações Técnicas
+
+Invisio utiliza:
+- **Cálculo Binário** para converter a mensagem em uma sequência de bits.
+- **Esteganografia** para embutir os bits nos pixels da imagem.
+- **HTML5 Canvas** para manipular a imagem e embutir a mensagem sem alterar o visual do avatar.
